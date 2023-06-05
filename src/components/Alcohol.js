@@ -4,7 +4,7 @@ import React from 'react'
 
 const Alcohol = ({alcohol, setDrinkFilter}) => {
   function handleAlcohol(){
-    console.log(alcohol)
+    // console.log(alcohol)
     setDrinkFilter(alcohol);
   }
   return (

@@ -7,7 +7,7 @@ import DrinkSearchBar from "./DrinkSearchBar"
 
 const DrinkContainer = ({drinks}) => {
   const [searchContent, setSearchContent] = useState("");
-  console.log(drinks);
+  // console.log(drinks);
   function renderDrinks(){
     return drinks
       .filter((drink) => drink.strDrink.toLowerCase().includes(searchContent.toLowerCase()))

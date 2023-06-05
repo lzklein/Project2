@@ -17,7 +17,7 @@ function App() {
   //fetch when alcohol is chosen
   const [drinks, setDrinks] = useState([]);
   useEffect(() => {
-    console.log(drinkFilter)
+    // console.log(drinkFilter)
     if(!!drinkFilter){
       fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${drinkFilter}`)
       .then(r => r.json())
