@@ -5,7 +5,9 @@ import React from 'react'
 import DrinkDetails from "./DrinkDetails"
 import DrinkSearchBar from "./DrinkSearchBar"
 
-const DrinkContainer = () => {
+const DrinkContainer = ({drinks}) => {
+  console.log(drinks);
+  
   return (
     <div>DrinkContainer</div>
   )

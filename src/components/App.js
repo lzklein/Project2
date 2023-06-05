@@ -5,20 +5,32 @@ import AlcoholList from "./AlcoholList"
 import DrinkContainer from "./DrinkContainer"
 
 function App() {
-  // const [drinks, setDrinks] = useState([]);  <-- use this later can fetch onclick of alcohol or something
-  //`www.thecocktaildb.com/api/json/v1/1/filter.php?i=${alcohol}`
+  //fetch for AlcoholList 
+  const [drinkFilter, setDrinkFilter] = useState(""); 
   const [alcohols, setAlcohols] = useState([]);
   useEffect(() => {
     fetch("https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list")
     .then(r => r.json())
-    .then(drinkData => setAlcohols(drinkData));
+    .then(ingredientData => setAlcohols(ingredientData));
   }, [])
+
+  //fetch when alcohol is chosen
+  const [drinks, setDrinks] = useState([]);
+  useEffect(() => {
+    console.log(drinkFilter)
+    if(!!drinkFilter){
+      fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${drinkFilter}`)
+      .then(r => r.json())
+      .then(drinkData => setDrinks(drinkData.drinks))
+    }
+  }, [drinkFilter])
+
 
   return (
     <div className="App">
       <Header />
-      <AlcoholList alcohols={alcohols}/>
-      <DrinkContainer />
+      <AlcoholList alcohols={alcohols} setDrinkFilter={setDrinkFilter}/>
+      <DrinkContainer drinks={drinks}/>
     </div>
   );
 }

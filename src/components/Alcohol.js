@@ -2,10 +2,14 @@
 //onClick set selectedAlcohol state or something to filter DrinkContainer
 import React from 'react'
 
-const Alcohol = ({alcohol}) => {
+const Alcohol = ({alcohol, setDrinkFilter}) => {
+  function handleAlcohol(){
+    console.log(alcohol)
+    setDrinkFilter(alcohol);
+  }
   return (
     <span>
-      <button>{alcohol}</button>
+      <button onClick={handleAlcohol}>{alcohol}</button>
     </span>
   )
 }
