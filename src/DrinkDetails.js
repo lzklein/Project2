@@ -1,0 +1,1 @@
+//expanded drink, all details in a card
