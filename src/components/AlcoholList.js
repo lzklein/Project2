@@ -4,8 +4,10 @@ import React from 'react'
 import Alcohol from "./Alcohol"
 
 const AlcoholList = ({alcohols, setDrinkFilter}) => {
+//all the alcohol listed out, click to generate list containing that drink
+//todo stretch combine similar like bourbon and whiskey into 1 category?
+//todo turn into react routing INDEX
   const {drinks} = alcohols;
-
     function renderAlcohol(){
       if(!!drinks){
         const alcoholic = drinks.filter((drink) => {

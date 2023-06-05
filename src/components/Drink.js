@@ -16,7 +16,8 @@ const Drink = ({drink}) => {
   }
 
   console.log(drinkDetails)
-
+//maybe a for loop or something to iterate the ingredients and measurements, stop when it reads null because each after will also be null
+//reference how the language selection is done for how to write the object path
   return (
     <div>
       <img src={drinkDetails.strDrinkThumb} alt={drinkDetails.streDrink} width={300} height={300}/>

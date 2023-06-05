@@ -3,6 +3,7 @@
 import React from 'react'
 
 const DrinkSearchBar = ({setSearchContent}) => {
+  //just a simple search bar nothing to see here
   function handleSearch(e){
     setSearchContent(e.target.value)
   }

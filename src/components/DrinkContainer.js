@@ -1,11 +1,10 @@
 //the full drink list container
 //filter and map Drink to here
-//return (showDrink ? <DrinkDetails /> : null)
 import React, {useState} from 'react'
 import DrinkDetails from "./DrinkDetails"
 import DrinkSearchBar from "./DrinkSearchBar"
 
-const DrinkContainer = ({drinks}) => {
+const DrinkContainer = ({drinks, drinkFilter}) => {
   const [searchContent, setSearchContent] = useState("");
   // console.log(drinks);
   function renderDrinks(){
@@ -17,6 +16,7 @@ const DrinkContainer = ({drinks}) => {
   }
   return (
     <div>
+      <h2>{drinkFilter} Drinks</h2>
       <DrinkSearchBar setSearchContent={setSearchContent}/>
       {renderDrinks()}
     </div>
