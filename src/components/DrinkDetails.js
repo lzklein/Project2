@@ -1,9 +1,12 @@
 //expanded drink, all details in a card
 import React from 'react'
 
-const DrinkDetails = () => {
+const DrinkDetails = ({drink}) => {
+  console.log(drink)
   return (
-    <div>DrinkDetails</div>
+    <div>
+      {drink.strDrink}
+    </div>
   )
 }
 

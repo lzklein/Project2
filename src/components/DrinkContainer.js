@@ -7,9 +7,13 @@ import DrinkSearchBar from "./DrinkSearchBar"
 
 const DrinkContainer = ({drinks}) => {
   console.log(drinks);
-  
+  function renderDrinks(){
+    return drinks.map((drink) => {return(
+      <DrinkDetails drink={drink} key={drink.idDrink}/>
+    )})
+  }
   return (
-    <div>DrinkContainer</div>
+    <div>{renderDrinks()}</div>
   )
 }
 
