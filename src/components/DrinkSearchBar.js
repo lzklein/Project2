@@ -2,9 +2,12 @@
 //top of drink container
 import React from 'react'
 
-const DrinkSearchBar = () => {
+const DrinkSearchBar = ({setSearchContent}) => {
+  function handleSearch(e){
+    setSearchContent(e.target.value)
+  }
   return (
-    <div>DrinkSearchBar</div>
+    <input type="text" placeholder="Search Drink by Name..." onChange={handleSearch}/>
   )
 }
 

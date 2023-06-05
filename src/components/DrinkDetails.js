@@ -1,11 +1,16 @@
 //expanded drink, all details in a card
-import React from 'react'
+import React, {useState} from 'react'
+import Drink from "./Drink"
 
 const DrinkDetails = ({drink}) => {
-  console.log(drink)
+  const [expanded, setExpanded] = useState(false);
+  function handleExpand(){
+    setExpanded(!expanded);
+  }
   return (
-    <div>
+    <div onClick={handleExpand}>
       {drink.strDrink}
+      {expanded ? <Drink drink={drink}/> : null}
     </div>
   )
 }
