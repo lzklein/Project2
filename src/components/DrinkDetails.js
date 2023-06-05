@@ -8,8 +8,9 @@ const DrinkDetails = ({drink}) => {
     setExpanded(!expanded);
   }
   return (
-    <div onClick={handleExpand}>
-      {drink.strDrink}
+    <div>
+      <h4 onClick={handleExpand}>{drink.strDrink}</h4>
+     
       {expanded ? <Drink drink={drink}/> : null}
     </div>
   )

@@ -4,17 +4,22 @@ import React, {useState, useEffect} from 'react'
 
 const Drink = ({drink}) => {
   const [drinkDetails, setDrinkDetails] = useState([]);
+  const [language, setLanguage] = useState("");
   useEffect(() => {
     fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${drink.idDrink}`)
     .then(r => r.json())
     .then(drinkData => setDrinkDetails(drinkData.drinks[0]))
   }, [])
 
+  function handleLanguage(e){
+    setLanguage(e.target.value)
+  }
+
   console.log(drinkDetails)
 
   return (
     <div>
-      <img src={drinkDetails.strDrinkThumb} alt={drinkDetails.streDrink}/>
+      <img src={drinkDetails.strDrinkThumb} alt={drinkDetails.streDrink} width={300} height={300}/>
       <ul>Ingredients :</ul>
       {drinkDetails.strIngredient1 ? <li>{drinkDetails.strMeasure1} {drinkDetails.strIngredient1}</li> : null}
       {drinkDetails.strIngredient2 ? <li>{drinkDetails.strMeasure2} {drinkDetails.strIngredient2}</li> : null}
@@ -33,7 +38,14 @@ const Drink = ({drink}) => {
       {drinkDetails.strIngredient15 ? <li>{drinkDetails.strMeasure15} {drinkDetails.strIngredient15}</li> : null}
 
       <h4>How to Make</h4>
-      <p>{drinkDetails.strInstructions}</p>
+      <select name="language" id="language" onChange={handleLanguage}>
+        {drinkDetails.strInstructions ?  <option value="">English</option> : null}
+        {drinkDetails.strInstructionsDE ? <option value="DE">Deutsch</option> : null}
+        {drinkDetails.strInstructionsIT ? <option value="IT">Italiana</option> : null}
+        {drinkDetails.strInstructionsES ? <option value="ES">Español</option> : null}
+        {drinkDetails.strInstructionsFR ? <option value="FR">Français</option> : null}
+      </select>
+      <p>{drinkDetails[`strInstructions${language}`]}</p>
     </div>
   )
 }
