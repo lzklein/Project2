@@ -1,13 +1,13 @@
 import '../App.css';
 import React, {useState, useEffect}  from "react";
 import Header from "./Header";
-import AlcoholList from "./AlcoholList"
-import DrinkContainer from "./DrinkContainer"
+import AlcoholList from "./AlcoholList";
+import DrinkContainer from "./DrinkContainer";
+import FeaturedDrink from "./FeaturedDrink";
 
 function App() {
   //fetch for AlcoholList 
   //todo the site looks bad
-  //todo submission field 
   //todo light/dark mode
   //todo check api for any other features that can be added
   //random drink, can use random button to generate random drink with www.thecocktaildb.com/api/json/v1/1/random.php
@@ -58,11 +58,13 @@ function App() {
       strInstructions: e.target.instructions.value
     }
     console.log(newDrink)
+    setDrinks([...drinks, newDrink])
   }
 
   return (
     <div className="App">
       <Header addNewDrink={addNewDrink}/>
+      <FeaturedDrink />
       <AlcoholList alcohols={alcohols} setDrinkFilter={setDrinkFilter}/>
       <DrinkContainer drinks={drinks} drinkFilter={drinkFilter}/>
     </div>

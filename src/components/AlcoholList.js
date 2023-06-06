@@ -29,7 +29,7 @@ const AlcoholList = ({alcohols, setDrinkFilter}) => {
           // drink.strIngredient1 == "Amaretto"
         });
         return alcoholic.map((alcohol) => {return (
-          <div className={"card-container"}>
+          <div className={"card-container"} key={alcohol.strIngredient1 + "div"}>
             <Alcohol alcohol={alcohol.strIngredient1} key={alcohol.strIngredient1} setDrinkFilter={setDrinkFilter}/>
           </div>
         )})

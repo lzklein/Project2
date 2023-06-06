@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color:#e1f9ff;
 }
 
 .App-logo {
@@ -40,6 +41,7 @@
 * {
   box-sizing: border-box;
 }
+
 .card-container {
   display: grid;
   float: left;
@@ -47,6 +49,9 @@
   padding: 0 10px;
   margin-left: 20px;
   margin-bottom: 15px;
+}
+.card:hover{
+  background-color:#dcdcdc;
 }
 
 
