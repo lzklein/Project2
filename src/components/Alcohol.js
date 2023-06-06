@@ -9,7 +9,7 @@ const Alcohol = ({alcohol, setDrinkFilter}) => {
   }
   return (
     <div >
-      <div class={"card"} onClick={handleAlcohol}>
+      <div className={"card"} onClick={handleAlcohol}>
         <img src={`https://www.thecocktaildb.com/images/ingredients/${alcohol}-Small.png`} alt={alcohol.name} ></img>
         <h4 >{alcohol}</h4>
       </div>

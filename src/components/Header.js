@@ -3,7 +3,7 @@
 import React, {useState} from 'react'
 import DrinkSubmitForm from "./DrinkSubmitForm"
 
-const Header = () => {
+const Header = ({addNewDrink}) => {
   //show and hide the form 
   const [showingForm, setShowingForm] = useState(false);
   function renderSubmitForm(){
@@ -14,7 +14,7 @@ const Header = () => {
     <div>
       <h1>Title Goes Here</h1>
       <button onClick={renderSubmitForm}>Add New Drink</button>
-      {showingForm ? <DrinkSubmitForm /> : null}
+      {showingForm ? <DrinkSubmitForm addNewDrink={addNewDrink}/> : null}
     </div>
   )
 }
