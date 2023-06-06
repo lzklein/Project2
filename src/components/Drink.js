@@ -20,7 +20,7 @@ const Drink = ({drink}) => {
 //reference how the language selection is done for how to write the object path
   return (
     <div>
-      <img src={drinkDetails.strDrinkThumb} alt={drinkDetails.streDrink} width={300} height={300}/>
+      <img src={drinkDetails.strDrinkThumb} alt={drinkDetails.strDrink} width={300} height={300}/>
       <ul>Ingredients :</ul>
       {drinkDetails.strIngredient1 ? <li>{drinkDetails.strMeasure1} {drinkDetails.strIngredient1}</li> : null}
       {drinkDetails.strIngredient2 ? <li>{drinkDetails.strMeasure2} {drinkDetails.strIngredient2}</li> : null}
