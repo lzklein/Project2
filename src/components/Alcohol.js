@@ -8,9 +8,12 @@ const Alcohol = ({alcohol, setDrinkFilter}) => {
     setDrinkFilter(alcohol);
   }
   return (
-    <span>
-      <button onClick={handleAlcohol}>{alcohol}</button>
-    </span>
+    <div >
+      <div class={"card"} onClick={handleAlcohol}>
+        <img src={`https://www.thecocktaildb.com/images/ingredients/${alcohol}-Small.png`} alt={alcohol.name} ></img>
+        <h4 >{alcohol}</h4>
+      </div>
+    </div>
   )
 }
 
