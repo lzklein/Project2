@@ -11,7 +11,7 @@ const LightRum = ({alcohol, loaded}) => {
         function renderList(){
             return alcohol.drinks.filter((drink) => drink.strDrink.toLowerCase().includes(searchContent.toLowerCase())).map((drink) => {
                 return(
-                    <DrinkDetails drink={drink} key={drink.idDrink}/>
+                    <DrinkDetails drink={drink} key={drink.id}/>
                 )
             })
         }
