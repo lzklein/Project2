@@ -1,18 +1,32 @@
 //each individual alcohol name & pic
 //onClick set selectedAlcohol state or something to filter DrinkContainer
 import React from 'react'
+import { NavLink } from "react-router-dom";
 
-const Alcohol = ({alcohol, setDrinkFilter}) => {
-  function handleAlcohol(){
-    // console.log(alcohol)
-    setDrinkFilter(alcohol);
-  }
+const Alcohol = ({alcohol}) => {
+  const linkStyles = {
+    display: "inline-block",
+    width: "125px",
+    padding: "12px",
+    margin: "0 6px 6px",
+    background: "blue",
+    textDecoration: "none",
+    color: "black",
+  };
   return (
-    <div >
-      <div className={"card"} onClick={handleAlcohol}>
-        <img src={`https://www.thecocktaildb.com/images/ingredients/${alcohol}-Small.png`} alt={alcohol.name} ></img>
-        <h4 >{alcohol}</h4>
-      </div>
+    <div>
+      <NavLink 
+        to={`/Alcohol/${alcohol.name}`}
+        exact
+        style={linkStyles}
+        activeStyle={{
+          background:"yellow"
+        }}
+        >
+          <img src={`https://www.thecocktaildb.com/images/ingredients/${alcohol.name}-Small.png`} ></img>
+         {alcohol.name}
+      </NavLink>
+
     </div>
   )
 }

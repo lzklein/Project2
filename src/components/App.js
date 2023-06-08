@@ -1,40 +1,41 @@
 import '../App.css';
 import React, {useState, useEffect}  from "react";
+import {Route, Switch} from "react-router-dom";
 import Header from "./Header";
 import AlcoholList from "./AlcoholList";
-import DrinkContainer from "./DrinkContainer";
-import FeaturedDrink from "./FeaturedDrink";
+import Gin from "./Gin";
+import LightRum from "./LightRum";
+import DarkRum from "./DarkRum";
+import Scotch from "./Scotch";
+import Brandy from "./Brandy";
+import Tequila from "./Tequila";
+import Vodka from "./Vodka";
+import Bourbon from "./Bourbon";
+// import FeaturedDrink from "./FeaturedDrink";
 
 function App() {
-  //fetch for AlcoholList 
-  //todo the site looks bad
-  //todo light/dark mode
-  //todo check api for any other features that can be added
-  //random drink, can use random button to generate random drink with www.thecocktaildb.com/api/json/v1/1/random.php
-  //or random drink loads right up top as "featured drink" each time loading in
-  //or have the random drink be consistent, retrigger everyday for "drink of the day"
-
-  //todo oh shit the ingredients totally came with pictures www.thecocktaildb.com/images/ingredients/gin-Small.png www.thecocktaildb.com/images/ingredients/gin-Medium.png
-  //www.thecocktaildb.com/images/ingredients/gin.png can incoporate into AlcoholList or Alcohol it will look nicer
-
-  const [drinkFilter, setDrinkFilter] = useState(""); 
   const [alcohols, setAlcohols] = useState([]);
+  const [loaded, setLoaded] = useState(false);
   useEffect(() => {
-    fetch("https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list")
+    fetch("http://localhost:3000/Alcohol")
     .then(r => r.json())
-    .then(ingredientData => setAlcohols(ingredientData));
+    .then(ingredientData => {
+      setAlcohols(ingredientData)
+      setLoaded(true);
+    });
   }, [])
 
-  //fetch when alcohol is chosen
-  const [drinks, setDrinks] = useState([]);
-  useEffect(() => {
-    // console.log(drinkFilter)
-    if(!!drinkFilter){
-      fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${drinkFilter}`)
-      .then(r => r.json())
-      .then(drinkData => setDrinks(drinkData.drinks))
-    }
-  }, [drinkFilter])
+  // //fetch when alcohol is chosen
+  // const [drinkFilter, setDrinkFilter] = useState(""); 
+  // const [drinks, setDrinks] = useState([]);
+  // useEffect(() => {
+  //   // console.log(drinkFilter)
+  //   if(!!drinkFilter){
+  //     fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${drinkFilter}`)
+  //     .then(r => r.json())
+  //     .then(drinkData => setDrinks(drinkData.drinks))
+  //   }
+  // }, [drinkFilter])
 
   function addNewDrink(e){
     const newDrink={
@@ -58,15 +59,53 @@ function App() {
       strInstructions: e.target.instructions.value
     }
     console.log(newDrink)
-    setDrinks([...drinks, newDrink])
+    setAlcohols([...alcohols, newDrink])
   }
+
+  // function renderRoute(){
+  //   alcohols.map((alcohol) => {
+  //     return(
+  //       <Route path={`/Alcohol/${alcohol.name}`}>
+  //         <DrinkContainer alcohol={alcohol}/>
+  //       </Route>
+  //     )
+  //   })
+    
+  // }
+
 
   return (
     <div className="App">
       <Header addNewDrink={addNewDrink}/>
-      <FeaturedDrink />
-      <AlcoholList alcohols={alcohols} setDrinkFilter={setDrinkFilter}/>
-      <DrinkContainer drinks={drinks} drinkFilter={drinkFilter}/>
+      {/* <FeaturedDrink /> */}
+      <AlcoholList alcohols={alcohols}/>
+      <Switch>
+        <Route path="/Alcohol/Light rum">
+          <LightRum alcohol={alcohols[0]}loaded={loaded}/>
+        </Route>
+        <Route path="/Alcohol/Dark rum">
+          <DarkRum alcohol={alcohols[1]}loaded={loaded}/>
+        </Route>
+        <Route path="/Alcohol/Scotch">
+          <Scotch alcohol={alcohols[2]}loaded={loaded}/>
+        </Route>
+        <Route path="/Alcohol/Brandy">
+          <Brandy alcohol={alcohols[3]}loaded={loaded}/>
+        </Route>
+        <Route path="/Alcohol/Bourbon">
+          <Bourbon alcohol={alcohols[4]} loaded={loaded}/>
+        </Route>
+        <Route path="/Alcohol/Tequila">
+          <Tequila alcohol={alcohols[5]}loaded={loaded}/>
+        </Route>
+        <Route path="/Alcohol/Vodka">
+          <Vodka alcohol={alcohols[6]}loaded={loaded}/>
+        </Route>
+        <Route path="/Alcohol/Gin">
+          <Gin alcohol={alcohols[7]}loaded={loaded}/>
+        </Route>
+      </Switch>
+
     </div>
   );
 }
