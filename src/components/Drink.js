@@ -6,9 +6,18 @@ const Drink = ({drink}) => {
   const [drinkDetails, setDrinkDetails] = useState([]);
   const [language, setLanguage] = useState("");
   useEffect(() => {
-    fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${drink.id}`)
-    .then(r => r.json())
-    .then(drinkData => setDrinkDetails(drinkData.drinks[0]))
+    if(!!drink.strIngredient1){
+      // fetch(`http://localhost:3000/${alcohol}/${drink.id}`)
+      fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${drink.id}`)
+      .then(r => r.json())
+      .then(drinkData => setDrinkDetails(drinkData.drinks[0]))
+    }
+    else{
+      fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${drink.id}`)
+      .then(r => r.json())
+      .then(drinkData => setDrinkDetails(drinkData.drinks[0]))
+    }
+
   }, [])
 
   function handleLanguage(e){
@@ -19,9 +28,9 @@ const Drink = ({drink}) => {
 //maybe a for loop or something to iterate the ingredients and measurements, stop when it reads null because each after will also be null
 //reference how the language selection is done for how to write the object path
   return (
-    <div>
+    <div className="drink-details">
       <img src={drinkDetails.strDrinkThumb} alt={drinkDetails.strDrink} width={300} height={300}/>
-      <ul>Ingredients :</ul>
+      <h4>Recipe</h4>
       {drinkDetails.strIngredient1 ? <li>{drinkDetails.strMeasure1} {drinkDetails.strIngredient1}</li> : null}
       {drinkDetails.strIngredient2 ? <li>{drinkDetails.strMeasure2} {drinkDetails.strIngredient2}</li> : null}
       {drinkDetails.strIngredient3 ? <li>{drinkDetails.strMeasure3} {drinkDetails.strIngredient3}</li> : null}
@@ -38,7 +47,7 @@ const Drink = ({drink}) => {
       {drinkDetails.strIngredient14 ? <li>{drinkDetails.strMeasure14} {drinkDetails.strIngredient14}</li> : null}
       {drinkDetails.strIngredient15 ? <li>{drinkDetails.strMeasure15} {drinkDetails.strIngredient15}</li> : null}
 
-      <h4>How to Make</h4>
+      <h4>Instructions</h4>
       <select name="language" id="language" onChange={handleLanguage}>
         {drinkDetails.strInstructions ?  <option value="">English</option> : null}
         {drinkDetails.strInstructionsDE ? <option value="DE">Deutsch</option> : null}

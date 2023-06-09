@@ -11,8 +11,9 @@ const Header = ({addNewDrink}) => {
   }
 
   return (
-    <div>
-      <h1>Title Goes Here</h1>
+    <div className={"header"}>
+      <h1>MixMixer</h1>
+      <h2>A Cocktail Catalog</h2>
       <button onClick={renderSubmitForm}>Add New Drink</button>
       {showingForm ? <DrinkSubmitForm addNewDrink={addNewDrink}/> : null}
     </div>

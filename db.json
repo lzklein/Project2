@@ -515,6 +515,16 @@
       "strDrink": "Victor",
       "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/voapgc1492976416.jpg",
       "id": "12450"
+    },
+    {
+      "strDrink": "Beer",
+      "strDrinkThumb": "beer",
+      "strIngredient1": "Beer",
+      "strIngredient2": "Vodka",
+      "strIngredient3": null,
+      "strIngredient4": null,
+      "strInstructions": "Beer",
+      "id": "QlsPpUY"
     }
   ],
   "Bourbon": [

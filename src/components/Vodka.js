@@ -21,7 +21,7 @@ const Vodka = ({alcohol, loaded, setDrinks, drinks}) => {
         }
     
         return (
-            <div>
+            <div className="alcohol-list">
                 <h2>{alcohol} Drinks</h2>
                 <DrinkSearchBar setSearchContent={setSearchContent}/>
                 {renderList()}

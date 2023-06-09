@@ -11,7 +11,6 @@ const Bourbon = ({alcohol, loaded, setDrinks, drinks}) => {
     }, [])
 
     if(loaded){
-
         function renderList(){
             return drinks.filter((drink) => drink.strDrink.toLowerCase().includes(searchContent.toLowerCase())).map((drink) => {
                 return(
@@ -21,7 +20,7 @@ const Bourbon = ({alcohol, loaded, setDrinks, drinks}) => {
         }
     
         return (
-            <div>
+            <div className="alcohol-list">
                 <h2>{alcohol} Drinks</h2>
                 <DrinkSearchBar setSearchContent={setSearchContent}/>
                 {renderList()}

@@ -11,7 +11,7 @@ const DrinkDetails = ({drink}) => {
   }
   return (
     <div>
-      <h4 onClick={handleExpand}>{drink.strDrink}</h4>
+      <h3 onClick={handleExpand}>{drink.strDrink}</h3>
      
       {expanded ? <Drink drink={drink}/> : null}
     </div>
