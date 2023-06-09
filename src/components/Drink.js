@@ -6,7 +6,7 @@ const Drink = ({drink}) => {
   const [drinkDetails, setDrinkDetails] = useState([]);
   const [language, setLanguage] = useState("");
   useEffect(() => {
-    fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${drink.idDrink}`)
+    fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${drink.id}`)
     .then(r => r.json())
     .then(drinkData => setDrinkDetails(drinkData.drinks[0]))
   }, [])

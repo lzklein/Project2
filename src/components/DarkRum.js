@@ -1,15 +1,19 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import DrinkDetails from "./DrinkDetails";
 import DrinkSearchBar from "./DrinkSearchBar";
 
-const DarkRum = ({alcohol, loaded}) => {
-    console.log(alcohol);
+const DarkRum = ({alcohol, loaded, setDrinks, drinks}) => {
     const [searchContent, setSearchContent] = useState("");
+    useEffect(()=>{
+        fetch(`http://localhost:3000/Darkrum`)
+        .then(r => r.json())
+        .then(drinkData => setDrinks(drinkData))
+    }, [])
 
     if(loaded){
 
         function renderList(){
-            return alcohol.drinks.filter((drink) => drink.strDrink.toLowerCase().includes(searchContent.toLowerCase())).map((drink) => {
+            return drinks.filter((drink) => drink.strDrink.toLowerCase().includes(searchContent.toLowerCase())).map((drink) => {
                 return(
                     <DrinkDetails drink={drink} key={drink.id}/>
                 )
@@ -18,7 +22,7 @@ const DarkRum = ({alcohol, loaded}) => {
     
         return (
             <div>
-                <h2>{alcohol.name} Drinks</h2>
+                <h2>{alcohol} Drinks</h2>
                 <DrinkSearchBar setSearchContent={setSearchContent}/>
                 {renderList()}
             </div>

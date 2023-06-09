@@ -16,6 +16,8 @@ import Bourbon from "./Bourbon";
 function App() {
   const [alcohols, setAlcohols] = useState([]);
   const [loaded, setLoaded] = useState(false);
+  const [drinks, setDrinks] = useState([])
+
   useEffect(() => {
     fetch("http://localhost:3000/Alcohol")
     .then(r => r.json())
@@ -38,28 +40,30 @@ function App() {
   // }, [drinkFilter])
 
   function addNewDrink(e){
-    const newDrink={
-      strDrink: e.target.name.value,
-      strDrinkThumb: e.target.image.value,
-      strIngredient1: e.target.ingredient1.value,
-      strIngredient2: e.target.strIngredient2 ? e.target.ingredient2.value : null,
-      strIngredient3: e.target.strIngredient3 ? e.target.ingredient3.value : null,
-      strIngredient4: e.target.strIngredient4 ? e.target.ingredient4.value : null,
-      strIngredient5: e.target.strIngredient5 ? e.target.ingredient5.value : null,
-      strIngredient6: e.target.strIngredient6 ? e.target.ingredient6.value : null,
-      strIngredient7: e.target.strIngredient7 ? e.target.ingredient7.value : null,
-      strIngredient8: e.target.strIngredient8 ? e.target.ingredient8.value : null,
-      strIngredient9: e.target.strIngredient9 ? e.target.ingredient9.value : null,
-      strIngredient10: e.target.strIngredient10 ? e.target.ingredient10.value : null,
-      strIngredient11: e.target.strIngredient11 ? e.target.ingredient11.value : null,
-      strIngredient12: e.target.strIngredient12 ? e.target.ingredient12.value : null,
-      strIngredient13: e.target.strIngredient13 ? e.target.ingredient13.value : null,
-      strIngredient14: e.target.strIngredient14 ? e.target.ingredient14.value : null,
-      strIngredient15: e.target.strIngredient15 ? e.target.ingredient15.value : null,
-      strInstructions: e.target.instructions.value
+    if(!! e.target.name.value && !! e.target.image.value&& !! e.target.ingredient1.value && !! e.target.instructions.value && e.target.alcohol.value != "Select Main Liquor"){
+    // if(!! e.target.name.value && e.target.alcohol.value != "Select Main Liquor"){
+      const newDrink={
+        strDrink: e.target.name.value,
+        strDrinkThumb: e.target.image.value,
+        strIngredient1: !!e.target.ingredient1.value ? e.target.ingredient1.value : null,
+        strIngredient2: !!e.target.ingredient2.value ? e.target.ingredient2.value : null,
+        strIngredient3: !!e.target.ingredient3.value ? e.target.ingredient3.value : null,
+        strIngredient4: !!e.target.ingredient4.value ? e.target.ingredient4.value : null,
+        strInstructions: e.target.instructions.value
+      }
+      console.log(newDrink)
+      fetch(`http://localhost:3000/${e.target.alcohol.value}`, {
+        method: "POST",
+        headers: {"Content-Type" : "application/json"},
+        body:JSON.stringify(newDrink)
+      })
+      .then(r => r.json())
+      .then(newDrinkData => setDrinks([...drinks, newDrinkData]))
     }
-    console.log(newDrink)
-    setAlcohols([...alcohols, newDrink])
+    else{
+      alert("fill out the form correctly")
+    }
+
   }
 
   // function renderRoute(){
@@ -80,29 +84,29 @@ function App() {
       {/* <FeaturedDrink /> */}
       <AlcoholList alcohols={alcohols}/>
       <Switch>
-        <Route path="/Alcohol/Light rum">
-          <LightRum alcohol={alcohols[0]}loaded={loaded}/>
+        <Route path="/Light rum">
+          <LightRum alcohol={alcohols[0]}loaded={loaded} setDrinks={setDrinks} drinks={drinks}/>
         </Route>
-        <Route path="/Alcohol/Dark rum">
-          <DarkRum alcohol={alcohols[1]}loaded={loaded}/>
+        <Route path="/Dark rum">
+          <DarkRum alcohol={alcohols[1]}loaded={loaded} setDrinks={setDrinks} drinks={drinks}/>
         </Route>
-        <Route path="/Alcohol/Scotch">
-          <Scotch alcohol={alcohols[2]}loaded={loaded}/>
+        <Route path="/Scotch">
+          <Scotch alcohol={alcohols[2]}loaded={loaded} setDrinks={setDrinks} drinks={drinks}/>
         </Route>
-        <Route path="/Alcohol/Brandy">
-          <Brandy alcohol={alcohols[3]}loaded={loaded}/>
+        <Route path="/Brandy">
+          <Brandy alcohol={alcohols[3]}loaded={loaded} setDrinks={setDrinks} drinks={drinks}/>
         </Route>
-        <Route path="/Alcohol/Bourbon">
-          <Bourbon alcohol={alcohols[4]} loaded={loaded}/>
+        <Route path="/Bourbon">
+          <Bourbon alcohol={alcohols[4]} loaded={loaded} setDrinks={setDrinks} drinks={drinks}/>
         </Route>
-        <Route path="/Alcohol/Tequila">
-          <Tequila alcohol={alcohols[5]}loaded={loaded}/>
+        <Route path="/Tequila">
+          <Tequila alcohol={alcohols[5]}loaded={loaded} setDrinks={setDrinks} drinks={drinks}/>
         </Route>
-        <Route path="/Alcohol/Vodka">
-          <Vodka alcohol={alcohols[6]}loaded={loaded}/>
+        <Route path="/Vodka">
+          <Vodka alcohol={alcohols[6]}loaded={loaded} setDrinks={setDrinks} drinks={drinks}/>
         </Route>
-        <Route path="/Alcohol/Gin">
-          <Gin alcohol={alcohols[7]}loaded={loaded}/>
+        <Route path="/Gin">
+          <Gin alcohol={alcohols[7]}loaded={loaded} setDrinks={setDrinks} drinks={drinks}/>
         </Route>
       </Switch>
 

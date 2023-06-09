@@ -1,534 +1,524 @@
 {
   "Alcohol": [
+    "Light rum",
+    "Dark rum",
+    "Scotch",
+    "Brandy",
+    "Bourbon",
+    "Tequila",
+    "Vodka",
+    "Gin"
+  ],
+  "Lightrum": [
     {
-      "id":"Light rum",
-      "name" : "Light rum",
-      "drinks" :[
-        {
-            "strDrink": "151 Florida Bushwacker",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/rvwrvv1468877323.jpg",
-            "id": "14588"
-          },
-          {
-            "strDrink": "155 Belmont",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/yqvvqs1475667388.jpg",
-            "id": "15346"
-          },
-          {
-            "strDrink": "3-Mile Long Island Iced Tea",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/rrtssw1472668972.jpg",
-            "id": "15300"
-          },
-          {
-            "strDrink": "A Furlong Too Late",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/ssxvww1472669166.jpg",
-            "id": "17831"
-          },
-          {
-            "strDrink": "A Night In Old Mandalay",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/vyrvxt1461919380.jpg",
-            "id": "17832"
-          },
-          {
-            "strDrink": "Acapulco",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/il9e0r1582478841.jpg",
-            "id": "17836"
-          },
-          {
-            "strDrink": "Apricot Lady",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/7ityp11582579598.jpg",
-            "id": "11050"
-          },
-          {
-            "strDrink": "Bacardi Cocktail",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/n433t21504348259.jpg",
-            "id": "17183"
-          },
-          {
-            "strDrink": "Banana Daiquiri",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/k1xatq1504389300.jpg",
-            "id": "11064"
-          },
-          {
-            "strDrink": "Between The Sheets",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/of1rj41504348346.jpg",
-            "id": "17184"
-          },
-          {
-            "strDrink": "Boston Sidecar",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/qzs5d11504365962.jpg",
-            "id": "11128"
-          },
-          {
-            "strDrink": "Caribbean Boilermaker",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/svsxsv1454511666.jpg",
-            "id": "17065"
-          },
-          {
-            "strDrink": "Casa Blanca",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/usspxq1441553762.jpg",
-            "id": "11222"
-          },
-          {
-            "strDrink": "Cherry Rum",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/twsuvr1441554424.jpg",
-            "id": "11239"
-          },
-          {
-            "strDrink": "Chicago Fizz",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/qwvwqr1441207763.jpg",
-            "id": "11242"
-          },
-          {
-            "strDrink": "Cranberry Cordial",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/qtspsx1472667392.jpg",
-            "id": "12802"
-          },
-          {
-            "strDrink": "Cuba Libre",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/wmkbfj1606853905.jpg",
-            "id": "11288"
-          },
-          {
-            "strDrink": "Daiquiri",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/mrz9091589574515.jpg",
-            "id": "11006"
-          },
-          {
-            "strDrink": "Frozen Daiquiri",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/7oyrj91504884412.jpg",
-            "id": "11387"
-          },
-          {
-            "strDrink": "Frozen Mint Daiquiri",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/jrhn1q1504884469.jpg",
-            "id": "11390"
-          },
-          {
-            "strDrink": "Frozen Pineapple Daiquiri",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/k3aecd1582481679.jpg",
-            "id": "11391"
-          },
-          {
-            "strDrink": "Havana Cocktail",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/59splc1504882899.jpg",
-            "id": "11470"
-          },
-          {
-            "strDrink": "Imperial Fizz",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/zj1usl1504884548.jpg",
-            "id": "11524"
-          },
-          {
-            "strDrink": "Jamaica Kiss",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/urpvvv1441249549.jpg",
-            "id": "14095"
-          },
-          {
-            "strDrink": "Long Island Iced Tea",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/wx7hsg1504370510.jpg",
-            "id": "17204"
-          },
-          {
-            "strDrink": "Long Island Tea",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/nkwr4c1606770558.jpg",
-            "id": "11002"
-          },
-          {
-            "strDrink": "Mai Tai",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/twyrrp1439907470.jpg",
-            "id": "11690"
-          },
-          {
-            "strDrink": "Mary Pickford",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/f9erqb1504350557.jpg",
-            "id": "17188"
-          },
-          {
-            "strDrink": "Mississippi Planters Punch",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/urpyqs1439907531.jpg",
-            "id": "11786"
-          },
-          {
-            "strDrink": "Mojito",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/metwgh1606770327.jpg",
-            "id": "11000"
-          },
-          {
-            "strDrink": "Monkey Wrench",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/bw2noj1582473243.jpg",
-            "id": "11798"
-          },
-          {
-            "strDrink": "Pina Colada",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/upgsue1668419912.jpg",
-            "id": "17207"
-          },
-          {
-            "strDrink": "Quaker's Cocktail",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/yrqppx1478962314.jpg",
-            "id": "11983"
-          },
-          {
-            "strDrink": "Quarter Deck Cocktail",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/qrwvps1478963017.jpg",
-            "id": "11985"
-          },
-          {
-            "strDrink": "Rum Milk Punch",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/w64lqm1504888810.jpg",
-            "id": "12087"
-          },
-          {
-            "strDrink": "Rum Old-fashioned",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/otn2011504820649.jpg",
-            "id": "12089"
-          },
-          {
-            "strDrink": "Rum Screwdriver",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/4c85zq1511782093.jpg",
-            "id": "12091"
-          },
-          {
-            "strDrink": "Rum Sour",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/bylfi21504886323.jpg",
-            "id": "12093"
-          },
-          {
-            "strDrink": "Shanghai Cocktail",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/ttyrxr1478820678.jpg",
-            "id": "12186"
-          },
-          {
-            "strDrink": "Strawberry Daiquiri",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/deu59m1504736135.jpg",
-            "id": "12316"
-          },
-          {
-            "strDrink": "The Evil Blue Thing",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/ojnpz71504793059.jpg",
-            "id": "16271"
-          },
-          {
-            "strDrink": "The Strange Weaver",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/opxjzh1604179528.jpg",
-            "id": "178339"
-          },
-          {
-            "strDrink": "Van Vleet",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/fgq2bl1492975771.jpg",
-            "id": "12436"
-          },
-          {
-            "strDrink": "Vesuvio",
-            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/26cq601492976203.jpg",
-            "id": "12444"
-          }
-      ]
+      "strDrink": "151 Florida Bushwacker",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/rvwrvv1468877323.jpg",
+      "id": "14588"
     },
     {
-      "id":"Dark rum",
-      "name" :"Dark rum",
-      "drinks":[
-    {
-        "strDrink": "155 Belmont",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/yqvvqs1475667388.jpg",
-        "id": "15346"
-      },
-      {
-        "strDrink": "Abilene",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/smb2oe1582479072.jpg",
-        "id": "17835"
-      },
-      {
-        "strDrink": "Adam",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/v0at4i1582478473.jpg",
-        "id": "17837"
-      },
-      {
-        "strDrink": "Almeria",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/rwsyyu1483388181.jpg",
-        "id": "11023"
-      },
-      {
-        "strDrink": "Bahama Mama",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/tyb4a41515793339.jpg",
-        "id": "17267"
-      },
-      {
-        "strDrink": "Bleeding Surgeon",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/usuvvr1472719118.jpg",
-        "id": "16295"
-      },
-      {
-        "strDrink": "Blue Hurricane",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/nwx02s1515795822.jpg",
-        "id": "17268"
-      },
-      {
-        "strDrink": "Blueberry Mojito",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/07iep51598719977.jpg",
-        "id": "178336"
-      },
-      {
-        "strDrink": "Cuba Libra",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/ck6d0p1504388696.jpg",
-        "id": "13751"
-      },
-      {
-        "strDrink": "Dark and Stormy",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/t1tn0s1504374905.jpg",
-        "id": "17211"
-      },
-      {
-        "strDrink": "Gideon's Green Dinosaur",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/p5r0tr1503564636.jpg",
-        "id": "17002"
-      },
-      {
-        "strDrink": "Lord And Lady",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/quwrys1468923219.jpg",
-        "id": "11670"
-      },
-      {
-        "strDrink": "Midnight Cowboy",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/vsxxwy1441208133.jpg",
-        "id": "11766"
-      },
-      {
-        "strDrink": "Mojito Extra",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/vwxrsw1478251483.jpg",
-        "id": "15841"
-      },
-      {
-        "strDrink": "Planter's Punch",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/fdk8a31606854815.jpg",
-        "id": "17191"
-      },
-      {
-        "strDrink": "Planter’s Punch",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/jn6o251643844541.jpg",
-        "id": "178368"
-      },
-      {
-        "strDrink": "Quentin",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/spxtqp1478963398.jpg",
-        "id": "11993"
-      },
-      {
-        "strDrink": "The Galah",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/sy7y6r1614775067.jpg",
-        "id": "178350"
-      },
-      {
-        "strDrink": "Veteran",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/iwml9t1492976255.jpg",
-        "id": "12446"
-      }
-      ]
+      "strDrink": "155 Belmont",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/yqvvqs1475667388.jpg",
+      "id": "15346"
     },
     {
-      "id":"Scotch",
-      "name":"Scotch",
-      "drinks":[
-      {
-          "strDrink": "Affinity",
-          "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/wzdtnn1582477684.jpg",
-          "id": "17840"
-        },
-        {
-          "strDrink": "Balmoral",
-          "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/vysuyq1441206297.jpg",
-          "id": "11060"
-        },
-        {
-          "strDrink": "Bobby Burns Cocktail",
-          "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/km6se51484411608.jpg",
-          "id": "11121"
-        },
-        {
-          "strDrink": "Broadside",
-          "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/l2o6xu1582476870.jpg",
-          "id": "178311"
-        },
-        {
-          "strDrink": "Dry Rob Roy",
-          "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/typuyq1439456976.jpg",
-          "id": "11324"
-        },
-        {
-          "strDrink": "Flying Scotchman",
-          "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/q53l911582482518.jpg",
-          "id": "11369"
-        },
-        {
-          "strDrink": "Godfather",
-          "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/e5zgao1582582378.jpg",
-          "id": "11423"
-        },
-        {
-          "strDrink": "Highland Fling Cocktail",
-          "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/0bkwca1492975553.jpg",
-          "id": "11476"
-        },
-        {
-          "strDrink": "Irish Cream",
-          "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/90etyl1504884699.jpg",
-          "id": "12820"
-        },
-        {
-          "strDrink": "Loch Lomond",
-          "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/rpvtpr1468923881.jpg",
-          "id": "11658"
-        },
-        {
-          "strDrink": "Rusty Nail",
-          "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/yqsvtw1478252982.jpg",
-          "id": "12101"
-        },
-        {
-          "strDrink": "Scotch Cobbler",
-          "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/1q7coh1504736227.jpg",
-          "id": "12138"
-        },
-        {
-          "strDrink": "Scotch Sour",
-          "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/0dnb6k1504890436.jpg",
-          "id": "12158"
-        },
-        {
-          "strDrink": "Thriller",
-          "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/rvuswq1461867714.jpg",
-          "id": "12388"
-        },
-        {
-          "strDrink": "Whisky Mac",
-          "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/yvvwys1461867858.jpg",
-          "id": "12518"
-        }
-      ]
-    },  
-    {
-      "id":"Brandy",
-      "name":"Brandy",
-      "drinks":[
-      {
-        "strDrink": "Amaretto Shake",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/xk79al1493069655.jpg",
-        "id": "15194"
-      },
-      {
-        "strDrink": "Bermuda Highball",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/qrvtww1441206528.jpg",
-        "id": "11084"
-      },
-      {
-        "strDrink": "Between The Sheets",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/of1rj41504348346.jpg",
-        "id": "17184"
-      },
-      {
-        "strDrink": "Boston Sidecar",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/qzs5d11504365962.jpg",
-        "id": "11128"
-      },
-      {
-        "strDrink": "Brandy Alexander",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/mlyk1i1606772340.jpg",
-        "id": "11016"
-      },
-      {
-        "strDrink": "Brandy Flip",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/6ty09d1504366461.jpg",
-        "id": "11164"
-      },
-      {
-        "strDrink": "Brandy Sour",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/b1bxgq1582484872.jpg",
-        "id": "11170"
-      },
-      {
-        "strDrink": "City Slicker",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/dazdlg1504366949.jpg",
-        "id": "11251"
-      },
-      {
-        "strDrink": "English Highball",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/dhvr7d1504519752.jpg",
-        "id": "11338"
-      },
-      {
-        "strDrink": "Gentleman's Club",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/k2r7wv1582481454.jpg",
-        "id": "11396"
-      },
-      {
-        "strDrink": "Horse's Neck",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/006k4e1504370092.jpg",
-        "id": "17202"
-      },
-      {
-        "strDrink": "Kioki Coffee",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/uppqty1441247374.jpg",
-        "id": "16951"
-      },
-      {
-        "strDrink": "Mississippi Planters Punch",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/urpyqs1439907531.jpg",
-        "id": "11786"
-      },
-      {
-        "strDrink": "Port Wine Cocktail",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/qruprq1441553976.jpg",
-        "id": "11963"
-      },
-      {
-        "strDrink": "Porto flip",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/64x5j41504351518.jpg",
-        "id": "17192"
-      },
-      {
-        "strDrink": "Quaker's Cocktail",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/yrqppx1478962314.jpg",
-        "id": "11983"
-      },
-      {
-        "strDrink": "Scooter",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/twuptu1483388307.jpg",
-        "id": "12130"
-      },
-      {
-        "strDrink": "Scotch Cobbler",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/1q7coh1504736227.jpg",
-        "id": "12138"
-      },
-      {
-        "strDrink": "Sidecar Cocktail",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/ewjxui1504820428.jpg",
-        "id": "12198"
-      },
-      {
-        "strDrink": "Sol Y Sombra",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/3gz2vw1503425983.jpg",
-        "id": "12256"
-      },
-      {
-        "strDrink": "Stinger",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/2ahv791504352433.jpg",
-        "id": "17193"
-      },
-      {
-        "strDrink": "Victor",
-        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/voapgc1492976416.jpg",
-        "id": "12450"
-      }
-      ]
+      "strDrink": "3-Mile Long Island Iced Tea",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/rrtssw1472668972.jpg",
+      "id": "15300"
     },
     {
-      "id":"Bourbon",
-      "name":"Bourbon",
-      "drinks":[
-  {
+      "strDrink": "A Furlong Too Late",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/ssxvww1472669166.jpg",
+      "id": "17831"
+    },
+    {
+      "strDrink": "A Night In Old Mandalay",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/vyrvxt1461919380.jpg",
+      "id": "17832"
+    },
+    {
+      "strDrink": "Acapulco",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/il9e0r1582478841.jpg",
+      "id": "17836"
+    },
+    {
+      "strDrink": "Apricot Lady",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/7ityp11582579598.jpg",
+      "id": "11050"
+    },
+    {
+      "strDrink": "Bacardi Cocktail",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/n433t21504348259.jpg",
+      "id": "17183"
+    },
+    {
+      "strDrink": "Banana Daiquiri",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/k1xatq1504389300.jpg",
+      "id": "11064"
+    },
+    {
+      "strDrink": "Between The Sheets",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/of1rj41504348346.jpg",
+      "id": "17184"
+    },
+    {
+      "strDrink": "Boston Sidecar",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/qzs5d11504365962.jpg",
+      "id": "11128"
+    },
+    {
+      "strDrink": "Caribbean Boilermaker",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/svsxsv1454511666.jpg",
+      "id": "17065"
+    },
+    {
+      "strDrink": "Casa Blanca",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/usspxq1441553762.jpg",
+      "id": "11222"
+    },
+    {
+      "strDrink": "Cherry Rum",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/twsuvr1441554424.jpg",
+      "id": "11239"
+    },
+    {
+      "strDrink": "Chicago Fizz",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/qwvwqr1441207763.jpg",
+      "id": "11242"
+    },
+    {
+      "strDrink": "Cranberry Cordial",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/qtspsx1472667392.jpg",
+      "id": "12802"
+    },
+    {
+      "strDrink": "Cuba Libre",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/wmkbfj1606853905.jpg",
+      "id": "11288"
+    },
+    {
+      "strDrink": "Daiquiri",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/mrz9091589574515.jpg",
+      "id": "11006"
+    },
+    {
+      "strDrink": "Frozen Daiquiri",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/7oyrj91504884412.jpg",
+      "id": "11387"
+    },
+    {
+      "strDrink": "Frozen Mint Daiquiri",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/jrhn1q1504884469.jpg",
+      "id": "11390"
+    },
+    {
+      "strDrink": "Frozen Pineapple Daiquiri",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/k3aecd1582481679.jpg",
+      "id": "11391"
+    },
+    {
+      "strDrink": "Havana Cocktail",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/59splc1504882899.jpg",
+      "id": "11470"
+    },
+    {
+      "strDrink": "Imperial Fizz",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/zj1usl1504884548.jpg",
+      "id": "11524"
+    },
+    {
+      "strDrink": "Jamaica Kiss",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/urpvvv1441249549.jpg",
+      "id": "14095"
+    },
+    {
+      "strDrink": "Long Island Iced Tea",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/wx7hsg1504370510.jpg",
+      "id": "17204"
+    },
+    {
+      "strDrink": "Long Island Tea",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/nkwr4c1606770558.jpg",
+      "id": "11002"
+    },
+    {
+      "strDrink": "Mai Tai",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/twyrrp1439907470.jpg",
+      "id": "11690"
+    },
+    {
+      "strDrink": "Mary Pickford",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/f9erqb1504350557.jpg",
+      "id": "17188"
+    },
+    {
+      "strDrink": "Mississippi Planters Punch",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/urpyqs1439907531.jpg",
+      "id": "11786"
+    },
+    {
+      "strDrink": "Mojito",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/metwgh1606770327.jpg",
+      "id": "11000"
+    },
+    {
+      "strDrink": "Monkey Wrench",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/bw2noj1582473243.jpg",
+      "id": "11798"
+    },
+    {
+      "strDrink": "Pina Colada",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/upgsue1668419912.jpg",
+      "id": "17207"
+    },
+    {
+      "strDrink": "Quaker's Cocktail",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/yrqppx1478962314.jpg",
+      "id": "11983"
+    },
+    {
+      "strDrink": "Quarter Deck Cocktail",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/qrwvps1478963017.jpg",
+      "id": "11985"
+    },
+    {
+      "strDrink": "Rum Milk Punch",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/w64lqm1504888810.jpg",
+      "id": "12087"
+    },
+    {
+      "strDrink": "Rum Old-fashioned",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/otn2011504820649.jpg",
+      "id": "12089"
+    },
+    {
+      "strDrink": "Rum Screwdriver",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/4c85zq1511782093.jpg",
+      "id": "12091"
+    },
+    {
+      "strDrink": "Rum Sour",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/bylfi21504886323.jpg",
+      "id": "12093"
+    },
+    {
+      "strDrink": "Shanghai Cocktail",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/ttyrxr1478820678.jpg",
+      "id": "12186"
+    },
+    {
+      "strDrink": "Strawberry Daiquiri",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/deu59m1504736135.jpg",
+      "id": "12316"
+    },
+    {
+      "strDrink": "The Evil Blue Thing",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/ojnpz71504793059.jpg",
+      "id": "16271"
+    },
+    {
+      "strDrink": "The Strange Weaver",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/opxjzh1604179528.jpg",
+      "id": "178339"
+    },
+    {
+      "strDrink": "Van Vleet",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/fgq2bl1492975771.jpg",
+      "id": "12436"
+    },
+    {
+      "strDrink": "Vesuvio",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/26cq601492976203.jpg",
+      "id": "12444"
+    }
+  ],
+  "Darkrum": [
+    {
+      "strDrink": "155 Belmont",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/yqvvqs1475667388.jpg",
+      "id": "15346"
+    },
+    {
+      "strDrink": "Abilene",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/smb2oe1582479072.jpg",
+      "id": "17835"
+    },
+    {
+      "strDrink": "Adam",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/v0at4i1582478473.jpg",
+      "id": "17837"
+    },
+    {
+      "strDrink": "Almeria",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/rwsyyu1483388181.jpg",
+      "id": "11023"
+    },
+    {
+      "strDrink": "Bahama Mama",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/tyb4a41515793339.jpg",
+      "id": "17267"
+    },
+    {
+      "strDrink": "Bleeding Surgeon",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/usuvvr1472719118.jpg",
+      "id": "16295"
+    },
+    {
+      "strDrink": "Blue Hurricane",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/nwx02s1515795822.jpg",
+      "id": "17268"
+    },
+    {
+      "strDrink": "Blueberry Mojito",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/07iep51598719977.jpg",
+      "id": "178336"
+    },
+    {
+      "strDrink": "Cuba Libra",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/ck6d0p1504388696.jpg",
+      "id": "13751"
+    },
+    {
+      "strDrink": "Dark and Stormy",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/t1tn0s1504374905.jpg",
+      "id": "17211"
+    },
+    {
+      "strDrink": "Gideon's Green Dinosaur",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/p5r0tr1503564636.jpg",
+      "id": "17002"
+    },
+    {
+      "strDrink": "Lord And Lady",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/quwrys1468923219.jpg",
+      "id": "11670"
+    },
+    {
+      "strDrink": "Midnight Cowboy",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/vsxxwy1441208133.jpg",
+      "id": "11766"
+    },
+    {
+      "strDrink": "Mojito Extra",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/vwxrsw1478251483.jpg",
+      "id": "15841"
+    },
+    {
+      "strDrink": "Planter's Punch",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/fdk8a31606854815.jpg",
+      "id": "17191"
+    },
+    {
+      "strDrink": "Planter’s Punch",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/jn6o251643844541.jpg",
+      "id": "178368"
+    },
+    {
+      "strDrink": "Quentin",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/spxtqp1478963398.jpg",
+      "id": "11993"
+    },
+    {
+      "strDrink": "The Galah",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/sy7y6r1614775067.jpg",
+      "id": "178350"
+    },
+    {
+      "strDrink": "Veteran",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/iwml9t1492976255.jpg",
+      "id": "12446"
+    }
+  ],
+  "Scotch": [
+    {
+      "strDrink": "Affinity",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/wzdtnn1582477684.jpg",
+      "id": "17840"
+    },
+    {
+      "strDrink": "Balmoral",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/vysuyq1441206297.jpg",
+      "id": "11060"
+    },
+    {
+      "strDrink": "Bobby Burns Cocktail",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/km6se51484411608.jpg",
+      "id": "11121"
+    },
+    {
+      "strDrink": "Broadside",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/l2o6xu1582476870.jpg",
+      "id": "178311"
+    },
+    {
+      "strDrink": "Dry Rob Roy",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/typuyq1439456976.jpg",
+      "id": "11324"
+    },
+    {
+      "strDrink": "Flying Scotchman",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/q53l911582482518.jpg",
+      "id": "11369"
+    },
+    {
+      "strDrink": "Godfather",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/e5zgao1582582378.jpg",
+      "id": "11423"
+    },
+    {
+      "strDrink": "Highland Fling Cocktail",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/0bkwca1492975553.jpg",
+      "id": "11476"
+    },
+    {
+      "strDrink": "Irish Cream",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/90etyl1504884699.jpg",
+      "id": "12820"
+    },
+    {
+      "strDrink": "Loch Lomond",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/rpvtpr1468923881.jpg",
+      "id": "11658"
+    },
+    {
+      "strDrink": "Rusty Nail",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/yqsvtw1478252982.jpg",
+      "id": "12101"
+    },
+    {
+      "strDrink": "Scotch Cobbler",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/1q7coh1504736227.jpg",
+      "id": "12138"
+    },
+    {
+      "strDrink": "Scotch Sour",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/0dnb6k1504890436.jpg",
+      "id": "12158"
+    },
+    {
+      "strDrink": "Thriller",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/rvuswq1461867714.jpg",
+      "id": "12388"
+    },
+    {
+      "strDrink": "Whisky Mac",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/yvvwys1461867858.jpg",
+      "id": "12518"
+    }
+  ],
+  "Brandy": [
+    {
+      "strDrink": "Amaretto Shake",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/xk79al1493069655.jpg",
+      "id": "15194"
+    },
+    {
+      "strDrink": "Bermuda Highball",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/qrvtww1441206528.jpg",
+      "id": "11084"
+    },
+    {
+      "strDrink": "Between The Sheets",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/of1rj41504348346.jpg",
+      "id": "17184"
+    },
+    {
+      "strDrink": "Boston Sidecar",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/qzs5d11504365962.jpg",
+      "id": "11128"
+    },
+    {
+      "strDrink": "Brandy Alexander",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/mlyk1i1606772340.jpg",
+      "id": "11016"
+    },
+    {
+      "strDrink": "Brandy Flip",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/6ty09d1504366461.jpg",
+      "id": "11164"
+    },
+    {
+      "strDrink": "Brandy Sour",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/b1bxgq1582484872.jpg",
+      "id": "11170"
+    },
+    {
+      "strDrink": "City Slicker",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/dazdlg1504366949.jpg",
+      "id": "11251"
+    },
+    {
+      "strDrink": "English Highball",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/dhvr7d1504519752.jpg",
+      "id": "11338"
+    },
+    {
+      "strDrink": "Gentleman's Club",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/k2r7wv1582481454.jpg",
+      "id": "11396"
+    },
+    {
+      "strDrink": "Horse's Neck",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/006k4e1504370092.jpg",
+      "id": "17202"
+    },
+    {
+      "strDrink": "Kioki Coffee",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/uppqty1441247374.jpg",
+      "id": "16951"
+    },
+    {
+      "strDrink": "Mississippi Planters Punch",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/urpyqs1439907531.jpg",
+      "id": "11786"
+    },
+    {
+      "strDrink": "Port Wine Cocktail",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/qruprq1441553976.jpg",
+      "id": "11963"
+    },
+    {
+      "strDrink": "Porto flip",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/64x5j41504351518.jpg",
+      "id": "17192"
+    },
+    {
+      "strDrink": "Quaker's Cocktail",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/yrqppx1478962314.jpg",
+      "id": "11983"
+    },
+    {
+      "strDrink": "Scooter",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/twuptu1483388307.jpg",
+      "id": "12130"
+    },
+    {
+      "strDrink": "Scotch Cobbler",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/1q7coh1504736227.jpg",
+      "id": "12138"
+    },
+    {
+      "strDrink": "Sidecar Cocktail",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/ewjxui1504820428.jpg",
+      "id": "12198"
+    },
+    {
+      "strDrink": "Sol Y Sombra",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/3gz2vw1503425983.jpg",
+      "id": "12256"
+    },
+    {
+      "strDrink": "Stinger",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/2ahv791504352433.jpg",
+      "id": "17193"
+    },
+    {
+      "strDrink": "Victor",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/voapgc1492976416.jpg",
+      "id": "12450"
+    }
+  ],
+  "Bourbon": [
+    {
       "strDrink": "Allegheny",
       "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/uwvyts1483387934.jpg",
       "id": "11021"
@@ -593,13 +583,9 @@
       "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/hyztmx1598719265.jpg",
       "id": "178333"
     }
-      ]
-    },
+  ],
+  "Tequila": [
     {
-      "id":"Tequila",
-      "name":"Tequila",
-      "drinks":[
-  {
       "strDrink": "110 in the shade",
       "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/xxyywq1454511117.jpg",
       "id": "15423"
@@ -734,13 +720,9 @@
       "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/fwpd0v1614006733.jpg",
       "id": "178347"
     }
-      ]
-    },
+  ],
+  "Vodka": [
     {
-      "id":"Vodka",
-      "name":"Vodka",
-      "drinks":[
-  {
       "strDrink": "155 Belmont",
       "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/yqvvqs1475667388.jpg",
       "id": "15346"
@@ -1210,12 +1192,8 @@
       "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/wtkqgb1485621155.jpg",
       "id": "16963"
     }
-      ]
-    },
-    {
-      "id":"Gin",
-      "name":"Gin",
-      "drinks":[
+  ],
+  "Gin": [
     {
       "strDrink": "3-Mile Long Island Iced Tea",
       "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/rrtssw1472668972.jpg",
@@ -1715,8 +1693,6 @@
       "strDrink": "Tuxedo Cocktail",
       "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/4u0nbl1504352551.jpg",
       "id": "12420"
-    }
-    ]
     }
   ]
 }

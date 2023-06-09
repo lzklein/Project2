@@ -16,15 +16,15 @@ const Alcohol = ({alcohol}) => {
   return (
     <div>
       <NavLink 
-        to={`/Alcohol/${alcohol.name}`}
+        to={`/${alcohol}`}
         exact
         style={linkStyles}
         activeStyle={{
           background:"yellow"
         }}
         >
-          <img src={`https://www.thecocktaildb.com/images/ingredients/${alcohol.name}-Small.png`} ></img>
-         {alcohol.name}
+          <img src={`https://www.thecocktaildb.com/images/ingredients/${alcohol}-Small.png`} ></img>
+         {alcohol}
       </NavLink>
 
     </div>
